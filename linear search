@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,a[10],sk,j,flag=0;
+	printf("enter the n value");
+	scanf("%d",&n);
+	printf("enter the number");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("enter the search element");
+	scanf("%d",&sk);
+	for(i=0;i<=n;i++)
+	{
+		
+			if(a[i]==sk)
+			{
+			flag=i;
+			}
+		
+	}
+		
+		if(flag==0)
+		{
+			printf("search element is not present in the array");
+		}
+		else
+		{
+			printf("search element %d is present in the position of %d",sk,flag);
+		}
+	}
