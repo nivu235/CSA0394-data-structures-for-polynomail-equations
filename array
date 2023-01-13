@@ -1,0 +1,36 @@
+#include<stdio.h>
+int findElement(int array[], int size, int keyToBeSearched) 
+{ 
+int i;  
+for (i = 0; i < size; i++) 
+if (array[i] == keyToBeSearched) 
+return i; 
+return - 1; 
+}  
+int main() 
+{ 
+int keyToBeSearched;
+int array[100],i,h;
+printf("enter the limit for the array\n");
+scanf("%d",&h);
+printf("enter the elements\n");
+for(i=0;i<h;i++)
+{
+	scanf("%d",&array[i]);
+}
+int size = sizeof(array) / sizeof(array[0]); 
+printf("enter the search element\n");
+scanf("%d",&keyToBeSearched);
+int pos = findElement(array, size, keyToBeSearched); 
+if(pos==-1){
+printf("n Element %d not found", keyToBeSearched);
+}
+else{
+printf("n Position of %d: %d", keyToBeSearched ,pos+1);
+}
+return 0; 
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Ter
